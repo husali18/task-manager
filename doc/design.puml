@@ -1,0 +1,13 @@
+@startuml
+
+class Figur {
+	som
+	viser hvordan
+}
+
+class Koden {
+	henger sammen
+}
+
+Figur -down-> Koden
+@enduml

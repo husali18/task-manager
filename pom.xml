@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>no.kristiania.pgr203</groupId>
+    <artifactId>task-manager</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!--
+    Her må du legge til:
+    - Prosjektet må bygge med Java 11 (oppsett av maven-compiler-plugin)
+    - Prosjektet må bruke JUnit 5
+    - `mvn test` må kjøre testene (oppsett av maven-surefire-plugin og junit-jupiter-engine)
+    - Etter å ha kjørt `mvn package` må man kunne kjøre prosjektets main-class med `java -jar target/http-server-1.0-SNAPSHOT.jar`
+        (oppsett av maven-shade-plugin)
+    -->
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <release>11</release>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
